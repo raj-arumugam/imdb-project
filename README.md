@@ -8,21 +8,33 @@ The prerequisite is Mac OS with Python 3.7.2 installed. check your python versio
 
 ## Follow quick instructions below to launch the API endpoint
 
-1. Downloaded source code and get on to project directory location
+## Follow quick instructions below to launch the API endpoint
 
-        >> cd into imdb-project 
+1. Download source code and navigate to project directory
 
-2. Create Virtual Environment to isolate package dependencies locally
+        >> cd imdb-project 
 
-    Run the following commands to create and activate virtual environment
+2. Create and activate Virtual Environment
 
+        # Create virtual environment
         >> python3 -m venv imdb-venv
+        
+        # Activate virtual environment
+        # On macOS/Linux:
         >> source imdb-venv/bin/activate
+        # On Windows:
+        >> imdb-venv\Scripts\activate
+
+        # Verify you're in virtual environment (should show path to imdb-venv)
+        >> which python
+        
+        # Upgrade pip
         >> python -m pip install --upgrade pip
 
-3. Install packages
-
-        >> pip install -r requirements.txt 
+3. Install dependencies
+        
+        # Ensure you're in virtual environment (should see (imdb-venv) in prompt)
+        >> pip install -r requirements.txt
 
 4. Apply DB Migrations
 
@@ -86,3 +98,13 @@ You can run the following command to check code quality score.
     >> coverage run --source='.' manage.py test api
 
     >> coverage report
+
+## Additional Notes
+
+- Always ensure you're working in the virtual environment - you should see `(imdb-venv)` in your terminal prompt
+- To deactivate the virtual environment when done:
+        >> deactivate
+
+- If you need to remove and recreate the virtual environment:
+        >> rm -rf imdb-venv/    # On macOS/Linux
+        >> rmdir /s imdb-venv   # On Windows
