@@ -8,8 +8,6 @@ The prerequisite is Mac OS with Python 3.7.2 installed. check your python versio
 
 ## Follow quick instructions below to launch the API endpoint
 
-## Follow quick instructions below to launch the API endpoint
-
 1. Download source code and navigate to project directory
 
         >> cd imdb-project 
